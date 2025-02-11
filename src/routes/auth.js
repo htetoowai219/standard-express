@@ -25,4 +25,5 @@ router.post("/refresh", generateNewRefreshToken);
 
 router.post("/logout", verifyJWT, logoutController);
 
+
 export default router;

@@ -4,6 +4,7 @@ import router from "./routes/test.js";
 import cookieParser from "cookie-parser";
 
 import authRouter from "./routes/auth.js";
+import updateRouter from "./routes/updateInfo.js";
 
 const app = express();
 
@@ -22,5 +23,6 @@ app.use(cookieParser());
 
 app.use("/test", router);
 app.use("/api/v1/", authRouter);
+app.use("/api/v1/update/", updateRouter);
 
 export {app};
